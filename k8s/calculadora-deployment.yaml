@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-calculadora
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-calculadora
+  template:
+    metadata:
+      labels:
+        app: api-calculadora
+    spec:
+      containers:
+        - name: api-calculadora
+          image: api-calculadora
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
