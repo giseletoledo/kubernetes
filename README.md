@@ -16,6 +16,8 @@ Este projeto demonstra uma orquestração simples de dois microserviços Flask u
 
 ## 🗂️ Estrutura do Projeto
 
+```
+
 orquestracao-k8s/
 ├── api-calculadora/
 │ ├── calculator.py
@@ -28,7 +30,7 @@ orquestracao-k8s/
 │ ├── calculadora-service.yaml
 │ ├── cliente-deployment.yaml
   └── cliente-service.yaml
-
+```
 
 ---
 
